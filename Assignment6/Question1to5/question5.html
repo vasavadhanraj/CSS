@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6: Q(5)</title>
+        <style>
+            button{
+                background-color: aqua;
+            }
+            body{
+                text-align: center;
+            }
+            div{
+                margin: 0 350px;
+                height: 200px;
+                width: 500px;
+                background-color: gold;
+            }
+        </style>
+        <script>
+            function hideShow(){
+                if(document.getElementById("mydiv").style.visibility == "hidden"){
+                    document.getElementById("mydiv").style.visibility = "visible";
+                }
+                else{
+                    document.getElementById("mydiv").style.visibility = "hidden"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="hideShow()">Hide/Show</button><br><br>
+        <div id="mydiv">
+            This is a example.
+        </div>
+        <p>The above div will hide and show on click of the button.</p>
+    </body>
+</html>
