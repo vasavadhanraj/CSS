@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 11: Q(2)</title>
+        <style>
+            div{
+                width: 200px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation: myRectangle 5s;
+                -webkit-animation: myRectangle 5s;
+                animation-delay: 5s;
+                -webkit-animation-delay: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Standard Syntax */
+            @keyframes myRectangle {
+                0%{background-color: red;left: 0px;top: 0px;}
+                25%{background-color: blue;left: 980px;top: 0px;}
+                50%{background-color: magenta;left: 980px;top: 435px;}
+                75%{background-color: aqua;left: 0px;top: 435px;}
+                100%{background-color: red;left: 0px;top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

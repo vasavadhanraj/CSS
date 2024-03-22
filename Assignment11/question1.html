@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 11: Q(1)</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 0.5s, height 0.5s, transform 0.5s;
+                transition-delay: 0.5s;
+                -webkit-transition: width 0.5s, height 0.5s, transform 0.5s;
+                -webkit-transition-delay: 0.5s;
+            }
+
+            div:hover{
+                width: 500px;
+                height: 500px;
+                transform: rotate(360deg);
+                animation: myFirst 4s;
+                -webkit-animation: myFirst s;
+                animation-iteration-count: infinite;
+                /* rotate 500px width height */
+            }
+
+            /* Standard Syntax */
+            @keyframes myFirst{
+                from{background-color: red;}
+                to{background-color: blue;}
+            }
+            /* Chrome,Safari,Opera */
+            @-webkit-keyframes myFirst{
+                from{background-color: red;}
+                to{background-color: blue;}
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
